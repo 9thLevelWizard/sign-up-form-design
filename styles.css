@@ -49,8 +49,16 @@ table {
 
 /**/
 
+@font-face {
+	font-family: "GeneraleStationRegular";
+	font-weight: normal;
+   	font-style: normal;
+	src: url(./fonts/GeneraleStation-Regular.otf);
+}
+
 :root {
 	--left-side-width: calc(0.4 * 100vw);
+	overflow: hidden;
 }
 
 .content {
@@ -60,6 +68,7 @@ table {
 
 .left-side {
 	width: var(--left-side-width);
+
 }
 
 .right-side {
@@ -67,19 +76,44 @@ table {
 }
 
 .left-image {
-	height: 100vh;
+	height: 101vh;
 	width: var(--left-side-width);
 }
 
+.image-header-container,
 .image-source-container {
 	width: var(--left-side-width);
 	color: white;
-	position: absolute;
 	text-align: center;
+	position: absolute;
+}
+
+.image-header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background-color: #130e15;
+	height: 5rem;
+	top: 25%;
+}
+
+.image-header {
+	font-family: "GeneraleStationRegular";
+	font-size: 4rem;
+	color: #ffa500;
+}
+
+.image-source-container {
 	bottom: 10px;
 }
 
-.image-source {
+.image-source-container > p:first-child {
+	margin-bottom: 2px;
+}
+
+.image-source,
+.logo-source {
 	font-size: 12px;
 }
 
