@@ -72,6 +72,9 @@ table {
 }
 
 .right-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 60%;
 }
 
@@ -121,4 +124,35 @@ table {
 	color: white;
 	text-decoration-line: underline;
 	text-decoration-style: dotted;
+}
+
+.top-right,
+.middle-right,
+.bottom-right {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-width: 0;
+}
+
+.top-right,
+.bottom-right {
+	background-color: grey;
+}
+
+.middle-right,
+.bottom-right {
+	justify-content: flex-start;
+}
+
+.top-right {
+	justify-content: center;
+}
+
+.middle-right > p:first-child {
+	padding-top: 16px;
+}
+
+.bottom-right > p:first-child {
+	padding-top: 32px;
 }
