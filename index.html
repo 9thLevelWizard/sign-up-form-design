@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link href="./styles.css" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="content">
         <div class="left-side">
-            <img class="left-image" src="./astronaut-floating-kvHhSroTNPY-unsplash.jpg" alt="Astronaut floating in space, attached to cord, Earth in background" referrerpolicy="no-referrer">
+            <img class="left-image" src="./astronaut-floating-kvHhSroTNPY-unsplash.jpg"
+                alt="Astronaut floating in space, attached to cord, Earth in background" referrerpolicy="no-referrer">
             <div class="image-header-container">
                 <img class="logo-image" src="./noun-solar-system-orange-1452407.png" alt="Solar system logo">
                 <h1 class="image-header">Space!</h1>
             </div>
             <div class="image-source-container">
-                <p class="image-source">Photo by <a href="https://unsplash.com/@nypl" class="source-link">The New York Public Library</a> on <a href="https://unsplash.com/" class="source-link">Unsplash</a></p>
-                <p class="logo-source">Logo icon by <a href="https://thenounproject.com/eucalyp/" class="source-link">Eucalyp</a></p>
+                <p class="image-source">Photo by <a href="https://unsplash.com/@nypl" class="source-link">The New York
+                        Public Library</a> on <a href="https://unsplash.com/" class="source-link">Unsplash</a></p>
+                <p class="logo-source">Logo icon by <a href="https://thenounproject.com/eucalyp/"
+                        class="source-link">Eucalyp</a></p>
             </div>
         </div>
         <div class="right-side">
             <div class="top-right">
-                <p>This is a not a real online service! You know you need something like this in your life to help you realize your wildest dreams.</p>
+                <p>This is a not a real online service! You know you need something like this in your life to help you
+                    realize your wildest dreams.</p>
                 <p>Sign up now to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div class="middle-right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsa distinctio, doloribus ratione odit reiciendis modi id perferendis cupiditate voluptatem reprehenderit laudantium minus voluptas facere ut. Tempora itaque minus laudantium!</p>
+                <form action="" method="post">
+                    <legend>Let's do this!</legend>
+                    <div class="form-container">
+                        <div class="form-row">
+                            <div class="input-field">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="input-field">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-field">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input-field">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="number" name="phone-number" id="phone-number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-field">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                            <div class="input-field">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm-password" id="confirm-password">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="bottom-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda mollitia impedit laudantium! Ex maiores ipsa dolorum aliquam iusto! Quisquam necessitatibus repudiandae dolores nisi magnam voluptates illum repellat est voluptatibus.</p>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

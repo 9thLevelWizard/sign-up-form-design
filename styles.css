@@ -59,6 +59,7 @@ table {
 :root {
 	--left-side-width: calc(0.4 * 100vw);
 	overflow: hidden;
+	font-family: "GeneraleStationRegular";
 }
 
 .content {
@@ -75,6 +76,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	font-size: 0.8rem;
 	width: 60%;
 }
 
@@ -117,7 +119,8 @@ table {
 
 .image-source,
 .logo-source {
-	font-size: 12px;
+	font-size: 0.8rem;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .source-link {
@@ -133,6 +136,7 @@ table {
 	flex-direction: column;
 	flex-grow: 1;
 	min-width: 0;
+	padding-left: 16px;
 }
 
 .top-right,
@@ -155,4 +159,37 @@ table {
 
 .bottom-right > p:first-child {
 	padding-top: 32px;
+}
+
+.bottom-right > button {
+	height: 40px;
+	width: 150px;
+	border-radius: 10px;
+	color: white;
+	background-color: darkolivegreen;
+	border: 2px solid darkolivegreen;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 500px;
+	gap: 16px;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: row;
+	gap: 64px;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+}
+
+form > legend {
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
