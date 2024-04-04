@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+input {
+    padding-block: 0px;
+}
+
 /**/
 
 @font-face {
@@ -136,6 +140,7 @@ table {
 	flex-direction: column;
 	flex-grow: 1;
 	min-width: 0;
+	height: calc(0.3 * 100vh);
 	padding-left: 32px;
 	color: orange;
 }
@@ -165,7 +170,6 @@ form > legend {
 }
 
 .middle-right {
-	height: 100px;
 	color: #1b5f8e;
 	box-shadow: inset 0px 0px 4px 2px black;
 }
@@ -177,9 +181,14 @@ form > legend {
 	color: white;
 	background-color: #1b5f8e;
 	border: 2px solid #1b5f8e;
+	box-shadow: 0px 0px 4px 1px #FF9800;
 	font-family: "GeneraleStationRegular";
 	position: relative;
 	top: 32px;
+}
+
+.bottom-right > button:hover {
+	box-shadow: 0px 0px 4px 1px #000000;
 }
 
 .bottom-right > p:first-of-type {
@@ -221,4 +230,16 @@ form > legend {
 input {
 	width: 200px;
 	height: 20px;
+	border: 1px solid #130e149c;
+}
+
+input:focus {
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px black;
+	outline-style: none;
+}
+
+input:invalid {
+	border: 1px solid red;
+	box-shadow: 0px 0px 2px red;
 }
