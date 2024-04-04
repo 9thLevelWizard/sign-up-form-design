@@ -136,12 +136,13 @@ table {
 	flex-direction: column;
 	flex-grow: 1;
 	min-width: 0;
-	padding-left: 16px;
+	padding-left: 32px;
+	color: orange;
 }
 
 .top-right,
 .bottom-right {
-	background-color: grey;
+	background-color: #130e14;
 }
 
 .middle-right,
@@ -151,19 +152,22 @@ table {
 
 .top-right > p,
 form > legend {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+.top-right > p:nth-child(2) {
+	margin-top: 16px;
 }
 
 .top-right {
 	justify-content: center;
 }
 
-.middle-right > p:first-child {
-	padding-top: 16px;
-}
-
-.bottom-right > p:first-child {
-	padding-top: 32px;
+.middle-right {
+	height: 100px;
+	color: #1b5f8e;
+	box-shadow: inset 0px 0px 4px 2px black;
 }
 
 .bottom-right > button {
@@ -171,8 +175,20 @@ form > legend {
 	width: 150px;
 	border-radius: 10px;
 	color: white;
-	background-color: darkolivegreen;
-	border: 2px solid darkolivegreen;
+	background-color: #1b5f8e;
+	border: 2px solid #1b5f8e;
+	font-family: "GeneraleStationRegular";
+	position: relative;
+	top: 32px;
+}
+
+.bottom-right > p:first-of-type {
+	position: relative;
+	top: 64px;
+}
+
+.log-in-link {
+	color: #1b5f8e;
 }
 
 .form-container {
@@ -181,8 +197,13 @@ form > legend {
 	flex-wrap: wrap;
 	width: 500px;
 	gap: 16px;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
 	font-weight: 200;
+}
+
+form > legend {
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .form-row {
@@ -197,7 +218,7 @@ form > legend {
 	gap: 4px;
 }
 
-form > legend {
-	margin-top: 16px;
-	margin-bottom: 16px;
+input {
+	width: 200px;
+	height: 20px;
 }
