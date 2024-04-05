@@ -35,6 +35,7 @@
             <div class="middle-right">
                 <form action="" method="post" id="sign-up-form">
                     <legend>Let's do this!</legend>
+                    <legend class="legend-required">Fields marked with * are required</legend>
                     <div class="form-container">
                         <div class="form-row">
                             <div class="input-field">
@@ -58,12 +59,12 @@
                         </div>
                         <div class="form-row">
                             <div class="input-field">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                                <label for="password">PASSWORD *</label>
+                                <input type="password" name="password" id="password" required>
                             </div>
                             <div class="input-field">
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm-password" id="confirm-password">
+                                <label for="confirm-password">CONFIRM PASSWORD *</label>
+                                <input type="password" name="confirm-password" id="confirm-password" required>
                             </div>
                         </div>
                     </div>

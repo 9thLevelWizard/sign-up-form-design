@@ -155,8 +155,7 @@ input {
 	justify-content: flex-start;
 }
 
-.top-right > p,
-form > legend {
+.top-right > p {
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 }
@@ -210,9 +209,14 @@ form > legend {
 	font-weight: 200;
 }
 
-form > legend {
+form > legend:first-child {
 	margin-top: 16px;
+}
+
+.legend-required {
+	margin-top: 4px;
 	margin-bottom: 16px;
+	font-size: 0.5rem;
 }
 
 .form-row {
@@ -230,12 +234,12 @@ form > legend {
 input {
 	width: 200px;
 	height: 20px;
-	border: 1px solid #130e149c;
+	border: 1px solid #130e1440;
 }
 
 input:focus {
-	border: 1px solid black;
-	box-shadow: 0px 0px 2px black;
+	border: 1px solid #130e149c;
+	box-shadow: 0px 0px 2px 1px #130e149c;
 	outline-style: none;
 }
 
