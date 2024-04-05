@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="input-field">
+                            <div class="input-field" id="password-field">
                                 <label for="password">PASSWORD *</label>
                                 <input type="password" name="password" id="password" required>
                             </div>
@@ -68,6 +68,28 @@
                             </div>
                         </div>
                     </div>
+                    <script>
+                        const password = document.getElementById("password");
+                        const confirmPassword = document.getElementById("confirm-password");
+                        const passwordField = document.getElementById("password-field")
+                        let matchWarning = document.createElement("label");
+
+                        password.addEventListener("input", validate);
+                        confirmPassword.addEventListener("input", validate);
+                        
+                        function validate() {
+                            if (password.value != confirmPassword.value) {
+                                matchWarning.setAttribute("for", "password");
+                                matchWarning.setAttribute("id", "match-warning");
+                                matchWarning.style.fontSize = "0.5rem";
+                                matchWarning.textContent = "Passwords do not match";
+                                passwordField.appendChild(matchWarning);
+                            }
+                            else {
+                                matchWarning.remove();
+                            };
+                        };
+                    </script>
                 </form>
             </div>
             <div class="bottom-right">
